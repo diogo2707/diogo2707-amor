@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #ffe6f0, #ffe0eb);
+  color: #a1005d;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.foto {
+  width: 100%;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.4);
+}
+
+.contador {
+  font-size: 1.8em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.musica {
+  display: none;
+}

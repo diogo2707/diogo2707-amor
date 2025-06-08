@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosso Amor 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Diogo & Amor 💞</h1>
+    <img src="foto.jpg" alt="Nosso amor" class="foto"/>
+
+    <h2>Estamos juntos há:</h2>
+    <div id="contador" class="contador"></div>
+
+    <div class="musica">
+      <iframe width="0" height="0" src="https://www.youtube.com/embed/ImePXu7HaWI?autoplay=1&loop=1&playlist=ImePXu7HaWI" frameborder="0" allow="autoplay"></iframe>
+    </div>
+  </div>
+
+  <script>
+    const inicio = new Date("2023-07-27T00:00:00");
+    const contador = document.getElementById("contador");
+
+    function atualizaContador() {
+      const agora = new Date();
+      const diff = agora - inicio;
+
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diff / (1000 * 60)) % 60);
+      const segundos = Math.floor((diff / 1000) % 60);
+
+      contador.textContent = `${dias} dias, ${horas}h ${minutos}m ${segundos}s 💕`;
+    }
+
+    setInterval(atualizaContador, 1000);
+    atualizaContador();
+  </script>
+</body>
+</html>
