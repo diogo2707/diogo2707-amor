@@ -6,19 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nosso Amor</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
-      background-color: #ffe6f0;
+      background-color: #b30000;
       font-family: 'Arial', sans-serif;
+      color: #fff0f5;
       text-align: center;
-      padding: 30px;
-      color: #99004d;
+      padding: 20px;
+    }
+    .imagem-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .imagem-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+    .conteudo {
+      margin-top: 30px;
     }
     h1 {
       font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffccdd;
     }
     #timer {
-      font-size: 2em;
+      font-size: 1.8em;
       margin: 20px 0;
+      color: #ffe6f0;
     }
     button {
       background-color: #ff4da6;
@@ -42,19 +64,23 @@
   </style>
 </head>
 <body>
-  <h1>💖 Diogo e Cida para sempre 💖</h1>
-  <p>Estamos juntos há:</p>
-  <div id="timer">Calculando...</div>
+  <div class="imagem-container">
+    <img src="foto.jpg" alt="Foto do casal">
+  </div>
 
-  <p>Clique abaixo para ouvir nossa música especial 🎶</p>
-  <button onclick="document.getElementById('musica').play()">❤️ Tocar música</button>
-  <br><br>
-  <audio id="musica" src="musica.mp3" preload="auto"></audio>
+  <div class="conteudo">
+    <h1>💖 Diogo e Cida para sempre 💖</h1>
+    <p>Estamos juntos há:</p>
+    <div id="timer">Calculando...</div>
 
-  <div class="hearts">💞💘💞</div>
+    <p>Clique abaixo para ouvir nossa música especial 🎶</p>
+    <button onclick="document.getElementById('musica').play()">❤️ Tocar música</button>
+    <audio id="musica" src="musica.mp3" preload="auto"></audio>
+
+    <div class="hearts">💞💘💞</div>
+  </div>
 
   <script>
-    // Data de início do relacionamento
     const inicio = new Date("2025-02-28T07:02:00");
 
     function atualizaContador() {
