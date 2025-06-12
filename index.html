@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
     }
+
     body {
       background-color: #b30000;
       font-family: 'Arial', sans-serif;
@@ -18,30 +19,48 @@
       text-align: center;
       padding: 20px;
     }
+
     .imagem-container {
       width: 100%;
       max-width: 800px;
       margin: 0 auto;
     }
+
     .imagem-container img {
       width: 100%;
       height: auto;
       display: block;
       border-radius: 10px;
     }
+
+    .conteudo-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
     .conteudo {
       margin-top: 30px;
     }
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
       color: #ffccdd;
     }
+
     #timer {
       font-size: 1.8em;
       margin: 20px 0;
       color: #ffe6f0;
     }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
     button {
       background-color: #ff4da6;
       color: white;
@@ -50,14 +69,18 @@
       font-size: 1em;
       border-radius: 10px;
       cursor: pointer;
+      margin-top: 20px;
     }
+
     button:hover {
       background-color: #e60073;
     }
+
     .hearts {
       font-size: 2em;
       margin-top: 20px;
     }
+
     audio {
       display: none;
     }
@@ -68,31 +91,26 @@
     <img src="foto.jpg" alt="Foto do casal">
   </div>
 
-  <div class="conteudo">
-    <h1>💖 Diogo e Cida para sempre 💖</h1>
-    <p>Estamos juntos há:</p>
-    <div id="timer">Calculando...</div>
+  <div class="conteudo-container">
+    <div class="conteudo">
+      <h1>💖 Diogo e Cida para sempre 💖</h1>
+      <p>Estamos juntos há:</p>
+      <div id="timer">Calculando...</div>
 
-    <p>No dia 28 de fevereiro de 2025 as nossas vidas mudaram, os nossos corações se conectaram.
+      <p>No dia 28 de fevereiro de 2025 as nossas vidas mudaram, os nossos corações se conectaram.</p>
+      <p>A nossa história se iniciou muito antes dessa data, desde 2012 começamos a plantar essa sementinha do amor.</p>
+      <p>Tivemos de seguir caminhos diferentes, passamos por diversas situações, mas a nossa sementinha sempre estava presente, sendo regada.</p>
+      <p>O nosso sentimento pelo outro sempre foi puro, verdadeiro e genuíno.</p>
+      <p>Quando concretizamos, percebemos que o que sentíamos um pelo outro era ainda mais forte do que pensávamos.</p>
+      <p>O nosso amor é muito intenso desde o primeiro dia. Estamos segurando a mão um do outro em todos os momentos da vida, sejam eles bons ou ruins.</p>
+      <p>Esse amor é mágico, esse amor é inexplicável e a cada dia que se passa ele só cresce. Estamos colecionando momentos e histórias inesquecíveis.</p>
+      <p>Somos um exemplo de que acreditar no amor verdadeiro vale muitíssimo a pena. Eu te amo!</p>
 
-A nossa história se iniciou muito antes dessa data, desde 2012 começamos a plantar essa sementinha do amor.
+      <button onclick="document.getElementById('musica').play()">❤️ Tocar música</button>
+      <audio id="musica" src="musica.mp3" preload="auto"></audio>
 
-Tivemos de seguir caminhos diferentes, passamos por diversas situações, mas a nossa sementinha sempre estava presente, sendo regada.
-
-O nosso sentimento pelo outro sempre foi puro, verdadeiro e genuíno.
-
-Quando concretizamos, percebemos que o que sentíamos um pelo outro era ainda mais forte do que pensávamos.
-
-O nosso amor é muito intenso desde o primeiro dia. Estamos segurando a mão um do outro em todos os momentos da vida, sejam eles bons ou ruins.
-
-Esse amor é mágico, esse amor é inexplicável e a cada dia que se passa ele só cresce. Estamos colecionando momentos e histórias inesquecíveis.
-
-Somos um exemplo de que acreditar no amor verdadeiro vale muitíssimo a pena. Eu te amo!
-</p>
-    <button onclick="document.getElementById('musica').play()">❤️ Tocar música</button>
-    <audio id="musica" src="musica.mp3" preload="auto"></audio>
-
-    <div class="hearts">💞💘💞</div>
+      <div class="hearts">💞💘💞</div>
+    </div>
   </div>
 
   <script>
